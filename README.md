@@ -30,8 +30,7 @@ By the end of the interview, a good solution will usually include:
 - a Python service that responds on `/` and `/health`
 - container behaviour that works on port `8080`
 - a Docker image that is close to best practice for a small service
-- OpenTofu that covers ECR, CloudWatch logs, IAM task execution, ECS cluster, and task definition
-- discussion of remote state, secrets, networking, and deployment workflow
+- OpenTofu that covers ECR, CloudWatch logs, IAM task execution and ECS cluster
 
 ## Constraints
 

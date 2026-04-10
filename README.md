@@ -53,9 +53,9 @@ The service is expected to use these where useful:
 ```powershell
 python -m venv .venv
 .venv\Scripts\activate
-python -m pip install -r app/requirements.txt -r app/requirements-dev.txt
+python -m pip install -r requirements.txt -r requirements-dev.txt
 python -m pytest
-python -m app
+python app.py
 docker build -t interview-service .
 docker run --rm -p 8080:8080 interview-service
 cd terraform

@@ -4,13 +4,13 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PORT=8080
 
-WORKDIR /workspace
+WORKDIR /app
 
-COPY app/requirements.txt ./requirements.txt
+COPY requirements.txt ./requirements.txt
 RUN python -m pip install --no-cache-dir -r requirements.txt
 
-COPY app ./app
+COPY app.py ./app.py
 
 EXPOSE 8081
 
-CMD ["python", "-m", "workdir"]
+CMD ["python", "app.py"]

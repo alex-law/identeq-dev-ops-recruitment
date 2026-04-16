@@ -7,9 +7,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 WORKDIR /app
 
 COPY requirements.txt ./requirements.txt
-RUN python -m pip install --no-cache-dir -r requirements.txt
-
-COPY app.py ./app.py
+RUN python -m pip install --no-cache-dir -r app/requirements.txt
 
 EXPOSE 8081
 
